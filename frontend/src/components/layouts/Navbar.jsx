@@ -23,8 +23,8 @@ const Navbar = () => {
     <nav className={`main-navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         
-{/* FINAL PERFECT LOGO */}
-<Link to="/" className=" w-[40%] p-2 ">
+{/* FINAL PERFECT LOGO */} 
+<Link to="/" className=" w-[80%] p-2 ">
   <img
     src={logo} 
     alt="OneByDesign" 
@@ -60,7 +60,7 @@ const Navbar = () => {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
-          {isMobileMenuOpen ? <RxCross2 /> : <LuMenu />}
+          {isMobileMenuOpen ? <RxCross2 className='text-4xl' /> : <LuMenu className=' text-4xl' />}
         </button>
       </div>
     </nav>
