@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo/logo2.png';
 import './Navbar.css';
+import { RxCross2 } from "react-icons/rx";
+import { LuMenu } from "react-icons/lu";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,7 +60,7 @@ const Navbar = () => {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
-          {isMobileMenuOpen ? 'Close' : 'Menu'}
+          {isMobileMenuOpen ? <RxCross2 /> : <LuMenu />}
         </button>
       </div>
     </nav>
