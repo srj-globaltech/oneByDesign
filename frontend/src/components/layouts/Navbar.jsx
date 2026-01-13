@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="navbar-container">
         
 {/* FINAL PERFECT LOGO */} 
-<Link to="/" className=" w-[50%] p-2 ">
+<Link to="/" className=" w-[40%] p-2 ">
   <img
     src={logo} 
     alt="OneByDesign" 
