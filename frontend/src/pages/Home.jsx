@@ -257,7 +257,7 @@ useEffect(() => {
 
           {/* Left Arrow */}
         <button className="nav-arrow left-arrow">‹</button>
-        <button className="nav-arrow right-arrow">›</button>
+        <button className="nav-arrow right-arrow ">›</button>
 
           {/* Sliding Reviews */}
           <div className="reviews-slider">

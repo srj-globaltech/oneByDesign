@@ -198,7 +198,7 @@
 
 .service-text {
   text-align: center;
-  padding: 0 10px;
+  padding: 20px 10px;
 }
 
 .service-text h3 {
@@ -219,6 +219,7 @@
   .services-one-row { padding: 140px 0; }
   .services-title { font-size: 3.4rem; }
   .services-title-wrapper { margin-bottom: 100px; }
+  
 }
 
 @media (min-width: 1024px) {
@@ -233,6 +234,7 @@
   .service-img img { height: 420px; }
   .service-text h3 { font-size: 3.2rem; }
   .service-text p { font-size: 1.2rem; }
+  
 }
 
 /* ==================== CLIENT REVIEWS – FULLY RESPONSIVE & FIXED ==================== */
@@ -631,4 +633,7 @@
     padding: 15px 25px;
     font-size: 1.2rem;
   }
+  .service-item.reverse {
+  flex-direction: column;
+}
 }
