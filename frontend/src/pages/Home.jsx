@@ -143,12 +143,16 @@ useEffect(() => {
   {/* PERFECT CENTERED CONTENT */}
   <div className='w-full relative top-[50%] '>
   <div className="hero-content1 sm:left-[14%] left-7 top-10">
-    <div className="text-[6vw] sm:text-5xl ">
+    <div className="text-[6vw] sm:text-5xl sm:hidden">
       <h1>Luxury Living | Commercial <br/> Workspaces | Curated <br/> Furniture and Styling</h1>
+
       {/* <button className="enquire-btn">Enquire Now</button> */}
     </div>
+    <div className='hidden sm:block text-6xl'>
+      <h1>Luxury Living | Commercial Workspaces | Curated Furniture and Styling</h1>
+    </div>
   </div> 
-  <button className=' absolute font-[#a9bcd0] flex items-center z-2 rounded-sm sm:top-60 top-45 sm:left-[14%] left-7'>
+  <button className=' absolute font-[#a9bcd0] flex items-center z-2 rounded-sm sm:top-60 top-45 sm:left-[42%] left-7'>
   <div data-aos="fade-up" data-aos-delay="600">
         <Link to="/contact" className="about-cinematic-btn ">
           Enquire Now
