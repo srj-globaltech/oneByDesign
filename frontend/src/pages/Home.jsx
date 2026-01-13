@@ -233,7 +233,7 @@ useEffect(() => {
         <p>
           1 by Design is where vision meets flawless execution. We create timeless interiors 
           and architectural masterpieces — from private residences to boutique hotels and 
-          iconic workspaces — all delivered turnkey with uncompromising quality.
+          iconic workspaces — All delivered turnkey with uncompromising quality.
         </p>
         <p className="text-bold">
           Less trends. More forever.

@@ -190,6 +190,7 @@
   /* object-fit: cover; */
   display: block;
   transition: transform .9s ease;
+  /* margin-top: 50px; */
 }
 
 .service-item:hover .service-img img {
@@ -205,13 +206,14 @@
   font-size: 2.2rem;
   font-weight: 100;
   color: #303030;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .service-text p {
   font-size: 1.15rem;
   line-height: 1.85;
   color: #000000;
+  margin-bottom: 30px;
 }
 
 /* Tablet & Desktop */
@@ -233,7 +235,9 @@
   .services-title-wrapper { margin-bottom: 120px; }
   .service-img img { height: 420px; }
   .service-text h3 { font-size: 3.2rem; }
-  .service-text p { font-size: 1.2rem; }
+  .service-text p { font-size: 1.2rem;
+  /* margin-bottom: 30px; */
+  }
   
 }
 
