@@ -671,7 +671,7 @@
 
 /* ==================== DESIGN CONSULTATION – CLEAN, LUXURY, PERFECT ==================== */
 .design-consultation-luxury {
-  padding: 180px 0 160px;
+  padding: 0px 0 0px;
   background: #ffffff;
   position: relative;
   overflow: hidden;
@@ -688,7 +688,7 @@
 .consultation-luxury-container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 0px;
   position: relative;
   z-index: 2;
   text-align: center;

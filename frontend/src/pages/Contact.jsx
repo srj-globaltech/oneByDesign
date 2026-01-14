@@ -122,7 +122,7 @@ useEffect(() => {
 
           {/* Right – Map & CTA */}
           <div className="location-map-cta">
-  <div className="map-wrapper">
+  <div className="map-wrapper ">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2892.044910246049!2d77.07477569580078!3d28.424333572387695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d199bd4db20bf%3A0xfc960424cd3abb4!2s1byDesign!5e1!3m2!1sen!2sin!4v1768382871717!5m2!1sen!2sin"
       width="100%"
