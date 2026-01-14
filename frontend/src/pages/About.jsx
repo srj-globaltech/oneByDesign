@@ -119,17 +119,17 @@ const About = () => {
       </section>
       {/* {About us footer part} */}
 
-      <section>
-        <div className=''>
-          <h4>Est. since 2023</h4>
-        <h1>ABOUT US</h1>
+      <section className='bg-[#0F0F0F] sm:flex h-screen justify-between items-center'>
+        <div className='text-[#a9bcd0] font-light w-full sm:w-[50%] h-[50%] bg-amber-400 sm:h-full'>
+          <h4 className='font-light'>Est. since 2023</h4>
+        <h1 className='font-light'>ABOUT US</h1>
         <p>1 by Design is a one stop shop for all your Interior and Architecture Design solutions, delivering Timeless and chic designed spaces executed Turnkey. 
 
 We offer services for Luxury living, Hospitality and Commercial Work spaces along with Curated Furniture and Styling</p>
 
         </div>
-        <div className='IMG'>
-          <img src="https://res.cloudinary.com/devcjzuyj/image/upload/q_auto,f_auto/v1768303719/Screenshot-2022-01-18-173016_n5lqin.jpg" alt="" />
+        <div className='IMG w-full sm:w-[50%] flex justify-center items-center bg-amber-700  h-[50%] sm:h-full'>
+          <img className='h-[50%] w-[50%] rounded-[4rem]' src="https://res.cloudinary.com/devcjzuyj/image/upload/q_auto,f_auto/v1768303719/Screenshot-2022-01-18-173016_n5lqin.jpg" alt="" />
         </div>
 
       </section>

@@ -82,19 +82,18 @@ useEffect(() => {
 
       {/* Next sections will come below this */}
 
-      {/* ==================== SECTION 2 – WITH PREMIUM SCROLL ANIMATIONS ==================== */}
-<section className="contact-section-2">
-  <div className="contact-grid">
+      {/* ==================== SECTION 3 – LOCATION & FINAL CTA ==================== */}
+      <section className="location-section">
+        <div className="location-container">
 
-    {/* Left – Studio Details */}
-    <div className="contact-info-side">
-      <h2 className="info-title scroll-animate" data-animation="fade-down">Begin Your Journey</h2>
-      <p className="info-text scroll-animate" data-animation="fade-up" data-delay="200">
-        We craft spaces that reflect who you are and how you want to live. 
-        Share your vision — we’ll bring it to life with precision and soul.
-      </p>
-
-      <div className="info-details">
+          {/* Left – Location Text */}
+          <div className="location-content">
+            <h2 className="location-title">Our Studio</h2>
+            <p className="location-desc">
+              Nestled in the heart of Gurgaon, our studio is where ideas take shape and 
+              visions become reality. Visit us to discuss your project in person.
+            </p>
+            <div className="info-details">
         <div className="info-block scroll-animate" data-animation="fade-up" data-delay="400">
           <p className="block-label">Email:</p>
           <a href="mailto:studio@1bydesign.in" className="block-value">
@@ -118,43 +117,34 @@ useEffect(() => {
           </p>
         </div>
       </div>
-    </div>
+            
+          </div>
 
-    {/* Right – Contact Form */}
-    <div className="contact-form-side scroll-animate" data-animation="slide-right" data-delay="400">
-     <form className="clean-form" onSubmit={handleSubmit}>
-      <div className="form-row">
-        <div className="input-wrapper">
-          <input type="text" name="name" value={formData.name} onChange={handleChange} required />
-          <label>Name :</label>
-        </div>
-      </div>
-
-      <div className="form-row">
-        <div className="input-wrapper">
-          <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-          <label>Email :</label>
-        </div>
-      </div>
-
-      <div className="form-row">
-        <div className="input-wrapper">
-          <textarea name="message" rows="6" value={formData.message} onChange={handleChange} required></textarea>
-          <label>Your Message :</label>
-        </div>
-      </div>
-
-      <button type="submit" className="form-submit" disabled={status === 'sending'}>
-        {status === 'sending' ? 'Sending...' : 'Send Message'}
-      </button>
-
-      {status === 'success' && <p style={{color: 'green', marginTop: '1rem'}}>Thank you! We'll get back to you soon.</p>}
-      {status === 'error' && <p style={{color: 'red'}}>Something went wrong. Try again.</p>}
-    </form>
-    </div>
-
+          {/* Right – Map & CTA */}
+          <div className="location-map-cta">
+  <div className="map-wrapper">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2892.044910246049!2d77.07477569580078!3d28.424333572387695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d199bd4db20bf%3A0xfc960424cd3abb4!2s1byDesign!5e1!3m2!1sen!2sin!4v1768382871717!5m2!1sen!2sin"
+      width="100%"
+      height="400"
+      style={{ border: 0, borderRadius: "20px" }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Office Location"
+    />
   </div>
-</section>
+
+  {/* CTA Button */}
+  <div className="cta-block">
+    <button className="schedule-btn">
+      Schedule a Visit
+    </button>
+  </div>
+</div>
+
+        </div>
+      </section>
 
 
 
@@ -206,49 +196,60 @@ useEffect(() => {
       {/* ==================== SECTION 3 – STUDIO MAP + CLOSING ==================== */}
 
 
-      {/* ==================== SECTION 3 – LOCATION & FINAL CTA ==================== */}
-      <section className="location-section">
-        <div className="location-container">
+      
+      {/* ==================== SECTION 2 – WITH PREMIUM SCROLL ANIMATIONS ==================== */}
+<section className="contact-section-2">
+  <div className="contact-grid">
 
-          {/* Left – Location Text */}
-          <div className="location-content">
-            <h2 className="location-title">Our Studio</h2>
-            <p className="location-desc">
-              Nestled in the heart of Gurgaon, our studio is where ideas take shape and 
-              visions become reality. Visit us to discuss your project in person.
-            </p>
-            <div className="location-address">
-              <p className="address-line">D-11/3 Exclusive Floors</p>
-              <p className="address-line">DLF Phase 5, Gurgaon</p>
-              <p className="address-line">Haryana 122009, India</p>
+    {/* Left – Studio Details */}
+    <div className="contact-info-side">
+      <h2 className="info-title scroll-animate" data-animation="fade-down">Begin Your Journey</h2>
+      <p className="info-text scroll-animate" data-animation="fade-up" data-delay="200">
+        We craft spaces that reflect who you are and how you want to live. 
+        Share your vision — we’ll bring it to life with precision and soul.
+      </p>
+      <div className="location-address">
+              <p className="address-line">1108, Basement</p>
+              <p className="address-line">Sector 35, Gurgaon</p>
+              <p className="address-line">Haryana 122002, India</p>
             </div>
-          </div>
+    </div>
 
-          {/* Right – Map & CTA */}
-          <div className="location-map-cta">
-            <div className="map-wrapper">
-              <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.933473825996!2d77.08987067564929!3d28.43650467576752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23e4c4c1f801%3A0xa6a2f8d2da52d58e!2s1108%2C%20Basement%2C%20Sector%2057%2C%20Gurugram%2C%20Haryana%20122002!5e0!3m2!1sen!2sin!4v1733467200000!5m2!1sen!2sin"
-  width="100%"
-  height="400"
-  style={{ border: 0, borderRadius: "20px" }}
-  allowFullScreen=""
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-  title="Office Location"
-/>
-            </div>
-
-            {/* CTA Button */}
-            <div className="cta-block">
-              <button className="schedule-btn">
-                Schedule a Visit
-              </button>
-            </div>
-          </div>
-
+    {/* Right – Contact Form */}
+    <div className="contact-form-side scroll-animate" data-animation="slide-right" data-delay="400">
+     <form className="clean-form" onSubmit={handleSubmit}>
+      <div className="form-row">
+        <div className="input-wrapper">
+          <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+          <label>Name :</label>
         </div>
-      </section>
+      </div>
+
+      <div className="form-row">
+        <div className="input-wrapper">
+          <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+          <label>Email :</label>
+        </div>
+      </div>
+
+      <div className="form-row">
+        <div className="input-wrapper">
+          <textarea name="message" rows="6" value={formData.message} onChange={handleChange} required></textarea>
+          <label>Your Message :</label>
+        </div>
+      </div>
+
+      <button type="submit" className="form-submit" disabled={status === 'sending'}>
+        {status === 'sending' ? 'Sending...' : 'Send Message'}
+      </button>
+
+      {status === 'success' && <p style={{color: 'green', marginTop: '1rem'}}>Thank you! We'll get back to you soon.</p>}
+      {status === 'error' && <p style={{color: 'red'}}>Something went wrong. Try again.</p>}
+    </form>
+    </div>
+
+  </div>
+</section>
       
       {/* Next sections will come below this */}
 
