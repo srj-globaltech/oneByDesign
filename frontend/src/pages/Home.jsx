@@ -148,10 +148,11 @@ useEffect(() => {
 
       {/* <button className="enquire-btn">Enquire Now</button> */}
     </div>
-    <div className='hidden sm:block text-6xl'>
+    
+  </div> 
+  <div className='hidden sm:block hero-content hero-content1 text-6xl'>
       <h1>Luxury Living | Commercial Workspaces | Curated Furniture and Styling</h1>
     </div>
-  </div> 
   <button className=' absolute font-[#a9bcd0] flex items-center z-2 rounded-sm sm:top-60 top-45 sm:left-[42%] left-7'>
   <div data-aos="fade-up" data-aos-delay="600">
         <Link to="/contact" className="about-cinematic-btn ">
@@ -228,8 +229,8 @@ useEffect(() => {
     {/* Main Content */}
     <div className="about-cinematic-content">
       <p className="about-estimate" data-aos="fade-up">Est. 2023</p>
-
       <h2 className="about-cinematic-title" data-aos="fade-up" data-aos-delay="200"> 
+          <span className='highlight-gradient text-4xl sm:text-8xl mb-5'>We Don’t Design Spaces <br /></span>
               <span className="highlight-gradient text-4xl sm:text-8xl mb-5">We Craft Legacies</span>
       </h2>
 
@@ -260,8 +261,8 @@ useEffect(() => {
         <div className="reviews-wrapper">
 
           {/* Left Arrow */}
-        <button className="nav-arrow left-arrow">‹</button>
-        <button className="nav-arrow right-arrow ">›</button>
+        <button className="text-4xl absolute top-[50%] z-2 left-arrow">‹</button>
+        <button className="text-4xl absolute top-[50%] z-2 right-arrow ">›</button>
 
           {/* Sliding Reviews */}
           <div className="reviews-slider">
