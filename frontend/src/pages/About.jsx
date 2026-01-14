@@ -1,6 +1,7 @@
 // src/pages/About.jsx
 import { useEffect } from 'react';
 import './About.css';
+import './Home.css';
 
 const About = () => {
 
@@ -119,20 +120,36 @@ const About = () => {
       </section>
       {/* {About us footer part} */}
 
-      <section className='bg-[#0F0F0F] sm:flex h-screen justify-between items-center'>
-        <div className='text-[#a9bcd0] font-light w-full sm:w-[50%] h-[50%] bg-amber-400 sm:h-full'>
-          <h4 className='font-light'>Est. since 2023</h4>
-        <h1 className='font-light'>ABOUT US</h1>
-        <p>1 by Design is a one stop shop for all your Interior and Architecture Design solutions, delivering Timeless and chic designed spaces executed Turnkey. 
+       <section className="bg-[#0F0F0F] sm:flex md:h-[500px] h-screen justify-between  items-center">
+      {/* Text Block */}
+      <div className="text-[#a9bcd0] w-full sm:w-1/2 gap-5 flex flex-col items-center justify-center text-center p-6">
+        <p className="font-medium text-xl w-11/12 mb-4 rounded-md p-2">
+          Est. since 2023
+        </p>
+        <p className="font-[4rem] text-4xl w-11/12 mb-6 rounded-md p-3">
+          ABOUT US
+        </p>
+        <p className="md:text-lg text-lg w-[80%] rounded-md p-4">
+          1 by Design is a one stop shop for all your Interior and Architecture
+          Design solutions, delivering timeless and chic designed spaces executed
+          turnkey. We offer services for luxury living, hospitality, and commercial
+          workspaces along with curated furniture and styling.
+        </p>
+        <button className='pointer border'>
+          Find Out More
+        </button>
+      </div>
 
-We offer services for Luxury living, Hospitality and Commercial Work spaces along with Curated Furniture and Styling</p>
+      {/* Image Block */}
+      <div className="w-full sm:w-1/2 flex justify-center items-center p-6">
+        <img
+          className="w-4/5 h-auto md:w-1/2 md:h-auto rounded-xl md:rounded-[4rem]"
+          src="https://res.cloudinary.com/devcjzuyj/image/upload/q_auto,f_auto/v1768303719/Screenshot-2022-01-18-173016_n5lqin.jpg"
+          alt="About Us"
+        />
+      </div>
+    </section>
 
-        </div>
-        <div className='IMG w-full sm:w-[50%] flex justify-center items-center bg-amber-700  h-[50%] sm:h-full'>
-          <img className='h-[50%] w-[50%] rounded-[4rem]' src="https://res.cloudinary.com/devcjzuyj/image/upload/q_auto,f_auto/v1768303719/Screenshot-2022-01-18-173016_n5lqin.jpg" alt="" />
-        </div>
-
-      </section>
 
 
     </>
